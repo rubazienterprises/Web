@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rubazi</title>
+    <link rel="icon" href="./logo.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="productlist.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="enquiryForm.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/c41f90c637.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- <img id="backImg" src="./Logo.jpg" alt=""> -->
+
+    <div class="topheader">
+      <div id="topdiv">
+        <div class="ImgLeft">
+          <img src="./logo.jpg" alt="Rubazi-Logo" />
+        </div>
+
+        <div class="slidcontainer">
+          <div class="slidHolder">
+            <div class="mySlides">
+              <p></p>
+              <h1 id="slides"><b>RUBAZI ENTERPRISES</b></h1>
+              <h2 id="slidesdesc">[Tally Developer]</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="ImgRight">
+          <img src="./tally-prime-logo.png" alt="TallyPrime-logo" />
+        </div>
+      </div>
+
+      <!-- <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Rubazi</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a class="active" href="Index.html">Home</a></li>
+          <li><a href="#productlist">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:showModalForm()">Login</a></li>
+          <li><a href="javascript:showEnquiryForm()">Enquiry</a></li>
+          <li><a href="#Game">Game</a></li>
+        
+        </ul>
+      </nav> -->
+
+
+<!--      
+<div class="topnav">
+<nav>   -->
+  
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Rubazi</label>
+      <ul>    
+        
+        <li><a class="list active" href="index.html">Home</a></li>
+        <li><a class="list" href="#productlist">Product</a></li>
+        <li><a class="list" href="#contact">Contact</a></li>
+        <li><a class="list" href="javascript:showModalForm()">Login</a></li>
+        <li><a class="list" href="javascript:showEnquiryForm()">Enquiry</a></li>
+        <li><a class="list" href="#Game">Game</a></li>
+        <li><div class="topnav-right">
+          <li> <a  class="list" href="#productlist"
+            ><i class="bx bx-search-alt-2"></i
+          ></a>
+          <li> <a  class="list" href="#about">About</a></li>
+          <li><a  class="list" href="http://rubazi.com/Default.aspx">Old Site</a></li>
+          <button type="button" onclick="changeTheme()">
+            <i class="bx bxs-moon"></i>
+          </button>
+        </div></li>
+      </ul>
+</nav>
+      </div>
+    </div>
+    <p>
+      <!-- <p id="home" ></p> -->
+    </p>
+
+    <div class="body-flex-container largefont">
+      <div class="intro">
+        <div class="textImage">
+          <div class="intro">
+            <h1>
+              We Build Applications
+              <br />
+              Fast, Wiser, Informative
+              <br />
+              and Easy to use.
+              <br />
+              Using latest Technology.
+            </h1>
+          </div>
+          <a href="#maincontent"
+            ><img src="./arrow-gif.gif" alt="arrow image"
+          /></a>
+        </div>
+        <br /><br /><br />
+      </div>
+    </div>
+
+    <p id="maincontent"></p>
+
+    <div id="mymain" class="body-flex-container largefont">
+      <div class="intro">
+        <div class="textImage">
+          <div class="intro">
+            <h1>
+              Web Applications
+              <br />
+              Windows Applications
+              <br />
+              Tally Add-Ons
+            </h1>
+          </div>
+          <img src="./Web-Image.PNG" alt="web-image" />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <p id="productlist"></p>
+    <div class="product-heading">
+      <h1><u> List of Products</u></h1>
+    </div>
+
+    <input
+      id="divsearchinput"
+      
+      type="search"
+      onkeyup="divsearchModule()"
+      placeholder="Search products..."
+      title="Type in a name"
+    />
+
+    <div id="divmodulelist" class="flex-container"></div>
+
+    <p id="about"></p>
+    <div class="about largefont intro">
+      <div class="intro">
+        <h1><u>About</u></h1>
+        <br />
+        <h3>
+          We are Freelance Developer, developing Applications for web, Windows,
+          Tally ERP and Tally Prime. Implementation of Tally, Implementation of
+          Payroll. Using latest Technology.
+        </h3>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- Hi,%0aI%20am%20Interested%20in%20your%20product%20,please,%20arrange%20Call:%20https://youtu.be/uYif3rTdUs8  -->
+
+    <p id="Game"></p>
+    <div class="about largefont intro">
+      <div class="intro">
+    <p>Enter No of divs required:</p>
+    <input id="myDivInput" type="text" onchange="makediv()" />
+    <button id="=refBtn" onclick="reload()">Refresh</button>
+    <p id="NumP"></p>
+    <div id="myDiv" class="flexbox-container">
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+</div>
+    
+
+
+    <p id="contact"></p>
+
+    <br />
+    <div class="subscribe intro">
+      <div>
+        <h1>Join our email news letter</h1>
+      </div>
+      <div>
+        <p>
+          Get regular updates on what's going on with rubazi, latest features,
+          early build and offers.
+        </p>
+      </div>
+      <div>
+        <input type="email" placeholder="E-mail" />
+        <button>subscribe</button>
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/XLToTally/"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.youtube.com/playlist?list=PLxEGiSHIxX13eX9zKh6F6CvEbL-eh9MMQ"
+          target="_blank"
+          class="fa fa-youtube"
+        ></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <div class="intro">Email: rubazienterprises@gmail.com</div>
+      <div class="intro">Phone: +91-8178284217</div>
+    </div>
+
+    <!-- <div class="bottom-contact intro">
+      <div class="intro">Email: rubazienterprises@gmail.com</div>
+      <div class="intro">Phone: +91-8178284217</div>
+    </div> -->
+
+    <div id="loginForm" class="modal">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span onclick="closeModalForm()" class="close" title="Close Modal"
+            >&times;</span
+          >
+          <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div id="loginFormbottom" class="container">
+          <button type="button" onclick="closeModalForm()" class="cancelbtn">
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="enquiryForm" class="modal">
+      <form
+        class="modal-content animate"
+        
+      >
+        <div class="container">
+          
+        <div class="enquirycontainer">
+          <h1>Enquiry Form</h1>
+          <span onclick="closeEnquiryForm()" class="close" title="Close Enquiry Form"
+            >&times;</span
+          >
+          
+        </div>
+          <div id="enqtype" >
+            <hr />
+            <br />
+
+            <label>
+              <input type="checkbox"   name="enquirytype" /> Tally
+              Add-On 
+            </label>
+
+            <label>
+              <input type="checkbox"   name="enquirytype" /> Tally
+              Sales 
+            </label>
+
+            <label>
+              <input type="checkbox"   name="enquirytype" /> Tally
+              Customization 
+            </label>
+            
+            <label>
+              <input type="checkbox"   name="enquirytype" /> Web Site  
+                          </label>
+            
+            <label>
+              <input type="checkbox"  name="enquirytype" /> Others
+              
+              
+            </label>
+            <br />
+            <br />
+            <hr />
+          </div>
+          
+          <label ><b>Your Name</b></label>
+          <input id="name"
+            type="text"
+            placeholder="Enter Your Name"
+            name="name"
+            required
+          />
+          <label ><b>Your Organization Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Your Organization Name"
+            required
+          />
+          <label ><b>Your Email Id</b></label>
+          <input
+            type="email"
+            placeholder="Enter Your Email Id"
+            required
+          />
+          <label><b>Your Mobile No.</b></label>
+          <input
+            type="mobile"
+            placeholder="Enter Your Mobile Number"
+            required
+          />
+
+          
+          
+          <label ><b>Your Message</b></label>
+          
+          <textarea rows="5" placeholder="Write your message here..."  required></textarea>
+          <button type="submit" onclick="AddNew()">Submit</button>
+          
+        </div>
+
+       
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <span>Copyright Rubazi Enterprises©</span>
+      <span>
+        [Developed by Rubazi® Enterprises, Phone: +918178284217, Email:
+        rubazienterprises@gmail.com]
+      </span>
+    </footer>
+
+    <script src="./javascript.js"></script>
+    <script src="./productlist.js"></script>
+    <script src="./slideShow.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
